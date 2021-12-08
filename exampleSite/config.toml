@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://demo.gethugothemes.com/educenter/"
-title = "Educenter | hugo education template"
+title = "Fórmate con Altia | Tu punto de partida como programador Full Stack"
 theme = "educenter-hugo"
 # post pagination
 paginate = "6"
@@ -9,7 +9,8 @@ summaryLength = "10"
 # disqus short name
 disqusShortname = "educenter" # get your shortname form here : https://disqus.com
 # disable language
-disableLanguages = [] # desable language from here
+defaultContentLanguage = "es"
+disableLanguages = ["en", "fr"] # desable language from here
 
 
 ############################# Plugins ##############################
@@ -41,6 +42,7 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 link = "plugins/google-map/gmap.js"
 
 
+
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
@@ -48,9 +50,9 @@ logo = "images/logo.png"
 description = "This is meta description"
 author = "Themefisher"
 # contact info
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@educenter.com"
+address = "Rúa do Conde de Torrecedeira, 97, BAJO, 36202 Vigo"
+mobile = "+34886 12 45 90"
+email = "nfigueiras@lideraprojects.com"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
@@ -65,14 +67,14 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # Subscription
 [params.subscription]
-enable = true
+enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
 
 # google map
 [params.map]
-enable = true
+enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
@@ -109,6 +111,34 @@ title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "#"
 
+################################### Spanish language #####################################
+[Languages.es]
+languageName = "Es"
+languageCode = "es-es"
+contentDir = "content/spanish"
+weight = 1
+home = "Home"
+# copyright
+copyright = "Fórmate con Altia 2021-2022"
+
+################### Spanish navigation ####################
+[[Languages.es.menu.main]]
+name = "Cursos"
+url = "course"
+weight = 2
+
+[[Languages.es.menu.main]]
+name = "Equipo"
+url = "teacher"
+weight = 5
+
+[[Languages.es.menu.main]]
+name = "Contacto"
+url = "contact"
+weight = 10
+
+
+
 
 ################################### English language #####################################
 [Languages.en]
@@ -120,7 +150,7 @@ home = "Home"
 # copyright
 copyright = "Copyright &copy; 2021 a hugo theme by [Themefisher](https://themefisher.com/hugo-themes/)"
 
-
+ 
 
 ################### English navigation ####################
 

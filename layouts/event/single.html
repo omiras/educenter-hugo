@@ -94,25 +94,5 @@
 </section>
 <!-- /event single -->
 
-<!-- more event -->
-<section class="section pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-title">{{ i18n "more_event" }}</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <!-- event -->
-      {{ $related := (where site.RegularPages "Type" "event") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) | shuffle | first 3}}
-      {{ range first 3 $related }}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "event" }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-<!-- /more event -->
 
 {{ end }}
